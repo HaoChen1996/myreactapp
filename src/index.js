@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Tip from './Tip';
+import ResumeIndex from "./resume_index";
+import About from "./About";
 
 ReactDOM.render(
   <React.StrictMode>
