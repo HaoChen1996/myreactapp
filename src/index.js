@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Tip from './Tip';
-import ResumeIndex from "./resume_index";
-import About from "./About";
+import ResumeHeader from './js/ResumeHeader';
+import About from './js/About'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ResumeHeader />
+    <About />
   </React.StrictMode>,
   document.getElementById('root')
 );
