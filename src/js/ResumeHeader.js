@@ -5,10 +5,40 @@ import '../css/style.css';
 
 
 class ResumeHeader extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            bgcolor : 'transparent'
+        };
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.bindScroll);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.bindScroll);
+    }
+
+    bindScroll(event) {
+        const scrollTop = (event.srcElement ? event.srcElement.documentElement.scrollTop : false) || window.pageYOffset || (event.srcElement ? event.srcElement.body.scrollTop : 0);
+        const scrollY = window.scrollY;
+        if(scrollY > 20) {
+           this.setState({
+               bgcolor : 'white'
+           });
+        }else {
+            this.setState({
+                bgcolor : 'transparent'
+            });
+        }
+    }
+
+
+
     render() {
         return (
             <header>
-                <Navbar className="navbar-expand-lg  fixed-top">
+                <Navbar className="navbar navbar-expand-lg " sticky="top" bg={this.state.bgcolor}>
                     <Container>
                         <Navbar.Brand>Hao Chen</Navbar.Brand>
                         <Navbar.Collapse>

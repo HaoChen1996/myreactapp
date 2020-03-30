@@ -3,8 +3,8 @@ import { Container, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
 import ReactTooltip from "react-tooltip";
-import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import {CircularProgress} from "@material-ui/core";
 
 class About extends React.Component{
 
@@ -55,32 +55,44 @@ class About extends React.Component{
                             <Row>
                                 <Col >
                                     <h3>language</h3>
-                                    <Col>
-                                    <p data-tip={this.state.java}>java</p> <ReactTooltip />
-                                    </Col>
-                                    <Col> <CircularProgressbar  value={90} text={`${90}%`} /> </Col>
-                                    <p data-tip={this.state.python}>python</p>
-                                    <ReactTooltip />
-                                    <p data-tip={this.state.javascript}>javascript</p> <ReactTooltip />
-                                    <p data-tip={this.state.C}>C</p> <ReactTooltip />
-                                    <p data-tip={this.state.kotlin}>kotlin</p> <ReactTooltip />
+                                    <p data-tip={this.state.java}> java <CircularProgress variant="static" value={90} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.python}>python <CircularProgress variant="static" value={80} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.javascript}>javascript <CircularProgress variant="static" value={60} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.C}>C <CircularProgress variant="static" value={20} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.kotlin}>kotlin <CircularProgress variant="static" value={10} size={20}/>
+                                    </p> <ReactTooltip />
                                 </Col>
                                 <Col>
                                     <h3>framework</h3>
-                                    <p data-tip={this.state.spring}>spring</p> <ReactTooltip />
-                                    <p data-tip={this.state.mybatis}>mybatis</p> <ReactTooltip />
-                                    <p data-tip={this.state.bootstrap}>bootstrap</p> <ReactTooltip />
-                                    <p data-tip={this.state.react}>react</p> <ReactTooltip />
-                                    <p data-tip={this.state.spark}>spark</p> <ReactTooltip />
-                                    <p data-tip={this.state.pytorch}>pytorch</p> <ReactTooltip />
+                                    <p data-tip={this.state.spring}>spring <CircularProgress variant="static" value={100} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.mybatis}>mybatis <CircularProgress variant="static" value={80} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.bootstrap}>bootstrap <CircularProgress variant="static" value={70} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.react}>react <CircularProgress variant="static" value={50} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.spark}>spark <CircularProgress variant="static" value={70} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.pytorch}>pytorch <CircularProgress variant="static" value={40} size={20}/>
+                                    </p> <ReactTooltip />
                                 </Col>
                                 <Col>
                                     <h3>theory</h3>
-                                    <p data-tip={this.state.pattern}>design pattern</p> <ReactTooltip />
-                                    <p data-tip={this.state.ml}>machine learning</p> <ReactTooltip />
-                                    <p data-tip={this.state.oo}>object orient</p> <ReactTooltip />
-                                    <p data-tip={this.state.agile}>agile</p> <ReactTooltip />
-                                    <p data-tip={this.state.ds}>data structures</p> <ReactTooltip />
+                                    <p data-tip={this.state.pattern}>design pattern <CircularProgress variant="static" value={90} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.ml}>machine learning <CircularProgress variant="static" value={60} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.oo}>object orient <CircularProgress variant="static" value={90} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.agile}>agile <CircularProgress variant="static" value={50} size={20}/>
+                                    </p> <ReactTooltip />
+                                    <p data-tip={this.state.ds}>data structures <CircularProgress variant="static" value={85} size={20}/>
+                                    </p> <ReactTooltip />
                                 </Col>
                             </Row>
                         </Col>
