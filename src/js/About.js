@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import '../css/style.css';
 import ReactTooltip from "react-tooltip";
 import 'react-circular-progressbar/dist/styles.css';
-import {CircularProgress} from "@material-ui/core";
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import '../css/style.css';
+
 
 class About extends React.Component{
 
@@ -31,6 +33,8 @@ class About extends React.Component{
         }
     }
 
+
+
     render() {
         return (
             <section className="about_part">
@@ -55,31 +59,54 @@ class About extends React.Component{
                             <Row>
                                 <Col >
                                     <h3>language</h3>
-                                    <p data-tip={this.state.java}> java <CircularProgress variant="static" value={90} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.python}>python <CircularProgress variant="static" value={80} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.javascript}>javascript <CircularProgress variant="static" value={60} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.C}>C <CircularProgress variant="static" value={20} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.kotlin}>kotlin <CircularProgress variant="static" value={10} size={20}/>
-                                    </p> <ReactTooltip />
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.java}> java</p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col><p data-tip={this.state.python}>python</p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col><p data-tip={this.state.javascript}>javascript</p> <ReactTooltip /> </Col>
+                                        <Col><CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.C}>C</p> <ReactTooltip /> </Col>
+                                        <Col><CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.kotlin}>kotlin</p> <ReactTooltip /> </Col>
+                                        <Col><CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+
                                 </Col>
                                 <Col>
                                     <h3>framework</h3>
-                                    <p data-tip={this.state.spring}>spring <CircularProgress variant="static" value={100} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.mybatis}>mybatis <CircularProgress variant="static" value={80} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.bootstrap}>bootstrap <CircularProgress variant="static" value={70} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.react}>react <CircularProgress variant="static" value={50} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.spark}>spark <CircularProgress variant="static" value={70} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.pytorch}>pytorch <CircularProgress variant="static" value={40} size={20}/>
-                                    </p> <ReactTooltip />
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.spring}>spring </p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.mybatis}>mybatis</p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.bootstrap}>bootstrap</p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.react}>react</p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col>  <p data-tip={this.state.spark}>spark</p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.pytorch}>pytorch</p> <ReactTooltip /> </Col>
+                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                    </Row>
                                 </Col>
                                 <Col>
                                     <h3>theory</h3>
