@@ -11,7 +11,7 @@ class ResumeHeader extends React.Component {
         this.state = {
             bgcolor : 'transparent'
         };
-        this.handleScroll = this.handleScroll.bind(this)
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
     componentDidMount() {

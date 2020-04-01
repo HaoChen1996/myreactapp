@@ -6,7 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import '../css/style.css';
-
+import ChangingProgressProvider from './ChangingProgressProvider';
 
 class About extends React.Component{
 
@@ -61,23 +61,53 @@ class About extends React.Component{
                                     <h3>language</h3>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.java}> java</p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 40, 60, 80, 90]}>
+                                            {percentage => (
+                                                <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                            )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col><p data-tip={this.state.python}>python</p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0,10, 20, 40, 60, 80, ]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col><p data-tip={this.state.javascript}>javascript</p> <ReactTooltip /> </Col>
-                                        <Col><CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 40, 60, 80, 80]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.C}>C</p> <ReactTooltip /> </Col>
-                                        <Col><CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 5, 6, 10, 14, 20]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.kotlin}>kotlin</p> <ReactTooltip /> </Col>
-                                        <Col><CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0,5, 10, 20, 25, 30]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
 
                                 </Col>
@@ -85,41 +115,117 @@ class About extends React.Component{
                                     <h3>framework</h3>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.spring}>spring </p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 40, 60, 80, 100]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.mybatis}>mybatis</p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 40, 60, 80, 100]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.bootstrap}>bootstrap</p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 10, 30, 50, 60, 70]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.react}>react</p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 5, 8, 10, 20, 40]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col>  <p data-tip={this.state.spark}>spark</p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 10, 20, 30, 40, 50]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.pytorch}>pytorch</p> <ReactTooltip /> </Col>
-                                        <Col> <CircularProgressbar className="skillset" value={90} text={`${90}%`} /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 2, 4, 10, 15, 20]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
                                     </Row>
                                 </Col>
                                 <Col>
                                     <h3>theory</h3>
-                                    <p data-tip={this.state.pattern}>design pattern <CircularProgress variant="static" value={90} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.ml}>machine learning <CircularProgress variant="static" value={60} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.oo}>object orient <CircularProgress variant="static" value={90} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.agile}>agile <CircularProgress variant="static" value={50} size={20}/>
-                                    </p> <ReactTooltip />
-                                    <p data-tip={this.state.ds}>data structures <CircularProgress variant="static" value={85} size={20}/>
-                                    </p> <ReactTooltip />
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.pattern}>design pattern</p> <ReactTooltip /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 40, 50, 60, 80]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col> <p data-tip={this.state.ml}>machine learning</p> <ReactTooltip /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 30, 40, 50, 60]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col><p data-tip={this.state.oo}>object orient </p> <ReactTooltip /> </Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 40, 60, 70, 80]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <Col><p data-tip={this.state.agile}>agile</p> <ReactTooltip /></Col>
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 10, 20, 30, 40, 50]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
+                                    </Row>
+                                    <Row className="align-items-center mt-3">
+                                        <p data-tip={this.state.ds}>data structures</p> <ReactTooltip />
+                                        <Col>
+                                            <ChangingProgressProvider  values={[0, 20, 40, 60, 80, 90]}>
+                                                {percentage => (
+                                                    <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
+                                                )}
+                                            </ChangingProgressProvider>
+                                        </Col>
+                                    </Row>
                                 </Col>
                             </Row>
                         </Col>
