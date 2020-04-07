@@ -5,7 +5,7 @@ import '../css/style.css';
 import port1 from "../img/port_1.png"
 import port2 from "../img/port_2.png"
 import port3 from "../img/port_3.png"
-
+import Slide from 'react-reveal/Slide';
 
 class Profile extends React.Component {
     render() {
@@ -31,10 +31,12 @@ class Profile extends React.Component {
                                 <div className="grid">
                                     <div className="grid-sizer"></div>
                                     <a href="" className="grid-item">
-                                        <img src={port1} alt="" />
-                                            <div className="portfolio_hover_text">
-                                                <i className="ti-plus"></i>
-                                            </div>
+                                        <Slide left>
+                                            <img src={port1} alt="" />
+                                                <div className="portfolio_hover_text">
+                                                    <i className="ti-plus"></i>
+                                                </div>
+                                        </Slide>
                                     </a>
                                     <a href="" className="grid-item big_height big_weight">
                                         <img src={port2} alt="" />
@@ -48,7 +50,6 @@ class Profile extends React.Component {
                                                 <i className="ti-plus"></i>
                                             </div>
                                     </a>
-
                                 </div>
                             </div>
                         </Col>
