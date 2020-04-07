@@ -51,7 +51,7 @@ class ResumeHeader extends React.Component {
                                 </Nav.Item>
                                 <Nav.Item>
                                     <NavDropdown title="pages" id="navbarDropdown_1">
-                                        <NavDropdown.Item >about</NavDropdown.Item>
+                                        <NavDropdown.Item>about</NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav.Item>
                                 <Nav.Item>
