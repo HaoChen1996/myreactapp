@@ -5,6 +5,7 @@ import '../css/style.css';
 import port1 from "../img/port_1.png"
 import port2 from "../img/port_2.png"
 import port3 from "../img/port_3.png"
+import LightSpeed from 'react-reveal/Slide';
 import Slide from 'react-reveal/Slide';
 
 class Profile extends React.Component {
@@ -27,30 +28,22 @@ class Profile extends React.Component {
                     </Row>
                     <Row>
                         <Col lg="12">
-                            <div className="mesonary_part">
-                                <div className="grid">
-                                    <div className="grid-sizer"></div>
-                                    <a href="" className="grid-item">
-                                        <Slide left>
-                                            <img src={port1} alt="" />
-                                                <div className="portfolio_hover_text">
-                                                    <i className="ti-plus"></i>
-                                                </div>
+                            <div className="gallery">
+                                    <a href="" className="gallery__item--1">
+                                        <LightSpeed  left>
+                                            <img src={port1} alt="" className="gallery__img" />
+                                        </LightSpeed>
+                                    </a>
+                                    <a href="" className="gallery__item--2">
+                                        <LightSpeed right>
+                                            <img src={port2} alt="" className="gallery__img"/>
+                                        </LightSpeed>
+                                    </a>
+                                    <a href="" className="gallery__item--3">
+                                        <Slide bottom>
+                                            <img src={port3} alt="" className="gallery__img"/>
                                         </Slide>
                                     </a>
-                                    <a href="" className="grid-item big_height big_weight">
-                                        <img src={port2} alt="" />
-                                            <div className="portfolio_hover_text">
-                                                <i className="ti-plus"></i>
-                                            </div>
-                                    </a>
-                                    <a href="" className="grid-item">
-                                        <img src={port3} alt="" />
-                                            <div className="portfolio_hover_text">
-                                                <i className="ti-plus"></i>
-                                            </div>
-                                    </a>
-                                </div>
                             </div>
                         </Col>
                     </Row>

@@ -74,22 +74,37 @@ header  {
     line-height: 14px;
 }
 
-.portfolio_part .grid-item {
-    position: relative;
-    z-index: 1;
-    text-align: center;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap:0rem;
 }
 
-.portfolio_part .grid-item:after {
-    position: absolute;
-    left: 0;
-    top: 0;
+.gallery__img {
     width: 100%;
     height: 100%;
-    background-color: #ea5267;
-    content: "";
-    opacity: 0;
-    z-index: 2;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery__item--1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery__item--2{
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
 }
