@@ -51,3 +51,45 @@ header  {
 .skillset {
     height: 40px;
 }
+
+.section_tittle {
+    margin-bottom: 76px;
+}
+
+.section_tittle h2 {
+    font-size: 36px;
+    color: #0a0b4d;
+    line-height: 48px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    margin-top: 22px;
+}
+
+.section_tittle p {
+    color: #ea5267;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.portfolio_part .grid-item {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.portfolio_part .grid-item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ea5267;
+    content: "";
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
