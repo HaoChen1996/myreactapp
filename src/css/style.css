@@ -1,13 +1,17 @@
 
 header  {
-    height: 1020px;
+    height: 900px;
     background-image: url("/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.navbar-expand-lg {
-    transition: 0.5s;
+#nav-content {
+    margin-left: 100px;
+}
+
+.nav-item {
+    margin-right: 10px;
 }
 
 .myicon {
@@ -26,7 +30,7 @@ header  {
 .banner_part .banner_text .banner_text_iner {
     display: table-cell;
     vertical-align: middle;
-    padding-top: 10px;
+    padding-bottom: 100px;
 }
 
 
@@ -41,19 +45,20 @@ header  {
 }
 
 .about_part {
+    height: 700px;
     background-color: lightcyan;
 }
 
 .about_text {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .skillset {
     height: 40px;
 }
 
-.section_tittle {
-    margin-bottom: 76px;
+.portfolio_part {
+    padding-top: 100px;
 }
 
 .section_tittle h2 {
@@ -108,3 +113,31 @@ header  {
     grid-row-start: 4;
     grid-row-end: 8;
 }
+
+.footer_Part {
+    padding-bottom: 100px;
+}
+
+.footer_Part .footer_text {
+    margin-bottom: 70px;
+}
+
+.footer_Part .footer_text span {
+    color: #ea5267;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.footer_Part .footer_text h2 {
+    font-size: 36px;
+}
+
+.footer_Part .footer_btn {
+    text-align: right;
+}
+
+.footer_Part .footer_menu a {
+    margin-right: 15px;
+}
+

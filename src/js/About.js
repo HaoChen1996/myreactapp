@@ -7,6 +7,8 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import '../css/style.css';
 import ChangingProgressProvider from './ChangingProgressProvider';
+import Spin from 'react-reveal/Spin';
+import Swing from 'react-reveal/Swing';
 
 class About extends React.Component{
 
@@ -33,9 +35,17 @@ class About extends React.Component{
         }
     }
 
+    range(start, stop, step) {
+        var a = [start], b = start;
+        while (b < stop) {
+            a.push(b += step || 1);
+        }
+        return a;
+    }
 
 
     render() {
+
         return (
             <section className="about_part">
                 <Container>
@@ -45,11 +55,11 @@ class About extends React.Component{
                                 <h4>about me</h4>
                                 <p>Havn't think of any introduction about myself.</p>
                                 <div className="experiance">
-                                    <h2>06</h2>
+                                    <Spin><h2>06</h2></Spin>
                                     <p>Years of experience in programming</p>
-                                    <h2>02</h2>
+                                    <Spin><h2>02</h2></Spin>
                                     <p>Years of experience in Engineering</p>
-                                    <h2>01</h2>
+                                    <Spin><h2>01</h2></Spin>
                                     <p>Years of experience in machine learning</p>
                                 </div>
                             </div>
@@ -58,11 +68,11 @@ class About extends React.Component{
                             <h4>Skill Set</h4>
                             <Row>
                                 <Col >
-                                    <h3>language</h3>
+                                    <Swing><h3>language</h3></Swing>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.java}> java</p> <ReactTooltip /> </Col>
                                         <Col>
-                                            <ChangingProgressProvider  values={[0, 20, 40, 60, 80, 90]}>
+                                            <ChangingProgressProvider  values={[1,10,20,40,50,90]}>
                                             {percentage => (
                                                 <CircularProgressbar className="skillset" value={percentage} text={`${percentage}%`} />
                                             )}
@@ -112,7 +122,7 @@ class About extends React.Component{
 
                                 </Col>
                                 <Col>
-                                    <h3>framework</h3>
+                                    <Swing><h3>framework</h3></Swing>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.spring}>spring </p> <ReactTooltip /> </Col>
                                         <Col>
@@ -175,7 +185,7 @@ class About extends React.Component{
                                     </Row>
                                 </Col>
                                 <Col>
-                                    <h3>theory</h3>
+                                    <Swing><h3>theory</h3></Swing>
                                     <Row className="align-items-center mt-3">
                                         <Col> <p data-tip={this.state.pattern}>design pattern</p> <ReactTooltip /> </Col>
                                         <Col>

@@ -11,7 +11,7 @@ import Slide from 'react-reveal/Slide';
 class Profile extends React.Component {
     render() {
         return (
-            <section className="portfolio_part section_padding">
+            <section className="portfolio_part ">
                 <Container>
                     <Row className="align-items-center">
                         <Col lg="6">

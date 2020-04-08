@@ -2,17 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import ResumeHeader from './js/ResumeHeader';
-import About from './js/About'
-import Profile from './js/Profile'
-import ResumeFooter from './js/ResumeFooter'
+import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ResumeHeader />
-    <About />
-    <Profile />
-    <ResumeFooter/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

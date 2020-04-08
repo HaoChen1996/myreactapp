@@ -24,7 +24,7 @@ class ResumeHeader extends React.Component {
 
     handleScroll() {
         if (window.pageYOffset > 500) {
-            this.setState({ bgcolor: "white" });
+            this.setState({ bgcolor: "dark" });
         }else{
             this.setState({ bgcolor: "transparent" });
         }
@@ -35,27 +35,27 @@ class ResumeHeader extends React.Component {
     render() {
         return (
             <header>
-                <Navbar className="navbar navbar-expand-lg " sticky="top" bg={this.state.bgcolor}>
+                <Navbar expand="lg" variant="dark" bg="dark" fixed="top" bg={this.state.bgcolor}>
                     <Container>
                         <Navbar.Brand>Hao Chen</Navbar.Brand>
-                        <Navbar.Collapse>
+                        <Navbar.Collapse id="nav-content">
                             <Nav>
-                                <Nav.Item>
-                                    <Nav.Link>Home</Nav.Link>
+                                <Nav.Item className="nav-item">
+                                    <Nav.Link >Home</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item>
-                                    <NavDropdown  title="Blog"  id="navBarDropdown">
+                                <Nav.Item className="nav-item">
+                                    <NavDropdown   title="Blog"  id="navBarDropdown">
                                         <NavDropdown.Item >blog</NavDropdown.Item>
                                         <NavDropdown.Item >Single blog</NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav.Item>
-                                <Nav.Item>
+                                <Nav.Item className="nav-item">
                                     <NavDropdown title="pages" id="navbarDropdown_1">
                                         <NavDropdown.Item>about</NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link>Contact</Nav.Link>
+                                <Nav.Item className="nav-item">
+                                    <Nav.Link >Contact</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>
@@ -70,7 +70,7 @@ class ResumeHeader extends React.Component {
 
                 <section className="banner_part">
                     <Container>
-                        <Row className="align-items-center">
+                        <Row>
                             <Col className="col-lg-7">
                                 <div className="banner_text">
                                     <div className="banner_text_iner">
