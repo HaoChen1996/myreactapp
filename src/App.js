@@ -1,11 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import * as serviceWorker from './serviceWorker';
-import ResumeHeader from './js/ResumeHeader';
-import About from './js/About'
-import Profile from './js/Profile'
-import ResumeFooter from './js/ResumeFooter'
+import {BrowserRouter as Router, Switch, Route, Link,Redirect} from "react-router-dom";
+import Home from './js/Home';
+import ML from "./blog/ml";
 
 class App extends React.Component {
 
@@ -13,10 +10,13 @@ class App extends React.Component {
 
         return (
             <div className="App">
-                <ResumeHeader />
-                <About />
-                <Profile />
-                <ResumeFooter/>
+                <Router>
+                    <Switch>
+                        <Route path='/home' component={Home}/>
+                        <Route path='/ml' component={ML} />
+                        <Redirect to='/home'/>
+                    </Switch>
+                </Router>
             </div>
         );
 
