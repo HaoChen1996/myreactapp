@@ -35,12 +35,12 @@ class Profile extends React.Component {
                                         </LightSpeed>
                                     </a>
                                     <a href="" className="gallery__item--2">
-                                        <LightSpeed right>
+                                        <LightSpeed right >
                                             <img src={port2} alt="" className="gallery__img"/>
                                         </LightSpeed>
                                     </a>
                                     <a href="" className="gallery__item--3">
-                                        <Slide bottom>
+                                        <Slide bottom >
                                             <img src={port3} alt="" className="gallery__img"/>
                                         </Slide>
                                     </a>

@@ -3,37 +3,11 @@ import { Container, Row, Col, Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
 
-export default class HeadNavbar extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            bgcolor : 'transparent'
-        };
-        this.handleScroll = this.handleScroll.bind(this);
-    }
-
-    componentDidMount() {
-        window.addEventListener('scroll',this.handleScroll);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll',this.handleScroll);
-    }
-
-    handleScroll() {
-        if (window.pageYOffset > 500) {
-            this.setState({ bgcolor: "dark" });
-        }else{
-            this.setState({ bgcolor: "transparent" });
-        }
-    }
-
-
+export default class BlogNavbar extends React.Component {
 
     render() {
         return (
-            <Navbar expand="lg" variant="dark" bg="dark" fixed="top" bg={this.state.bgcolor}>
+            <Navbar expand="lg" variant="dark" bg="dark" fixed="top" >
                 <Container>
                     <Navbar.Brand>Hao Chen</Navbar.Brand>
                     <Navbar.Collapse id="nav-content">
@@ -43,7 +17,7 @@ export default class HeadNavbar extends React.Component {
                             </Nav.Item>
                             <Nav.Item className="nav-item">
                                 <NavDropdown   title="Blog"  id="navBarDropdown">
-                                    <NavDropdown.Item href="/moblie" >ml</NavDropdown.Item>
+                                    <NavDropdown.Item href="/ml" >ml</NavDropdown.Item>
                                     <NavDropdown.Item >Single blog</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav.Item>

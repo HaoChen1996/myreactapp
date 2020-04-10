@@ -141,3 +141,71 @@ header  {
     margin-right: 15px;
 }
 
+.projects-head {
+    height: 400px;
+}
+
+/* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
+.breadcrumb {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    background-color: darkslategray;
+}
+
+/* line 7, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
+.breadcrumb:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: 0;
+    background-size: contain;
+    top: 0;
+    z-index: -1;
+}
+
+/* line 19, /Applications/MAMP/htdocs/palash/cl/july 2019/july/195 Resume/195 resume html/sass/_breadcrumb.scss */
+.breadcrumb:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: 0;
+    background-size: contain;
+    top: 0;
+    z-index: -1;
+}
+
+.breadcrumb .breadcrumb_iner {
+    height: 450px;
+    width: 100%;
+    display: table;
+}
+
+.breadcrumb .breadcrumb_iner .breadcrumb_iner_item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.sample-text-area {
+    background: #fff;
+    padding: 100px 0 70px 0;
+}
+
+.sample-text-area p {
+    color: #000;
+}
+
+.text-heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+}

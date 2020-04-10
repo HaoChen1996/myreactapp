@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import {BrowserRouter as Router, Switch, Route, Link,Redirect} from "react-router-dom";
 import Home from './js/Home';
-import ML from "./blog/ml";
+import MobileProject from "./blog/mobileProject";
 
 class App extends React.Component {
 
@@ -13,7 +13,7 @@ class App extends React.Component {
                 <Router>
                     <Switch>
                         <Route path='/home' component={Home}/>
-                        <Route path='/ml' component={ML} />
+                        <Route path='/moblie' component={MobileProject} />
                         <Redirect to='/home'/>
                     </Switch>
                 </Router>
