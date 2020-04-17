@@ -7,6 +7,7 @@ import port2 from "../img/port_2.png"
 import port3 from "../img/port_3.png"
 import LightSpeed from 'react-reveal/Slide';
 import Slide from 'react-reveal/Slide';
+import {Link} from "react-router-dom";
 
 class Profile extends React.Component {
     render() {
@@ -29,11 +30,11 @@ class Profile extends React.Component {
                     <Row>
                         <Col lg="12">
                             <div className="gallery">
-                                    <a href="" className="gallery__item--1">
+                                    <Link to="/moblie" className="gallery__item--1">
                                         <LightSpeed  left>
                                             <img src={port1} alt="" className="gallery__img" />
                                         </LightSpeed>
-                                    </a>
+                                    </Link>
                                     <a href="" className="gallery__item--2">
                                         <LightSpeed right >
                                             <img src={port2} alt="" className="gallery__img"/>

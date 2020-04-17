@@ -6,10 +6,11 @@ import HeadNavbar from "./HeadNavbar";
 
 class ResumeHeader extends React.Component {
 
+
     render() {
         return (
             <header>
-                <HeadNavbar />
+                <HeadNavbar notFromHome={false} bgcolor={"transparent"}/>
                 <section className="banner_part">
                     <Container>
                         <Row>

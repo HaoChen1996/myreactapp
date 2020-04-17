@@ -187,7 +187,7 @@ class About extends React.Component{
                                 <Col>
                                     <Swing><h3>theory</h3></Swing>
                                     <Row className="align-items-center mt-3">
-                                        <Col> <p data-tip={this.state.pattern}>design pattern</p> <ReactTooltip /> </Col>
+                                        <Col> <p data-tip={this.state.pattern}>DP</p> <ReactTooltip /> </Col>
                                         <Col>
                                             <ChangingProgressProvider  values={[0, 20, 40, 50, 60, 80]}>
                                                 {percentage => (
@@ -197,7 +197,7 @@ class About extends React.Component{
                                         </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
-                                        <Col> <p data-tip={this.state.ml}>machine learning</p> <ReactTooltip /> </Col>
+                                        <Col> <p data-tip={this.state.ml}>ML</p> <ReactTooltip /> </Col>
                                         <Col>
                                             <ChangingProgressProvider  values={[0, 20, 30, 40, 50, 60]}>
                                                 {percentage => (
@@ -207,7 +207,7 @@ class About extends React.Component{
                                         </Col>
                                     </Row>
                                     <Row className="align-items-center mt-3">
-                                        <Col><p data-tip={this.state.oo}>object orient </p> <ReactTooltip /> </Col>
+                                        <Col><p data-tip={this.state.oo}>OO </p> <ReactTooltip /> </Col>
                                         <Col>
                                             <ChangingProgressProvider  values={[0, 20, 40, 60, 70, 80]}>
                                                 {percentage => (

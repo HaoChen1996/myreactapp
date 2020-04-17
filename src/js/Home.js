@@ -3,6 +3,7 @@ import ResumeHeader from './ResumeHeader';
 import About from './About'
 import Profile from './Profile'
 import ResumeFooter from './ResumeFooter'
+import Contact from './Contact'
 
 export default class Home extends React.Component {
 
@@ -12,7 +13,7 @@ export default class Home extends React.Component {
                 <ResumeHeader />
                 <About />
                 <Profile />
-                <ResumeFooter/>
+                <Contact/>
             </div>
         );
     }

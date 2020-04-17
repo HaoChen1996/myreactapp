@@ -1,14 +1,15 @@
 import React from 'react';
-import { Container, Row, Col, Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Container, Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
 
 export default class HeadNavbar extends React.Component {
 
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
-            bgcolor : 'transparent'
+            navbarNotFromHome : props.notFromHome,
+            bgcolor : props.bgcolor
         };
         this.handleScroll = this.handleScroll.bind(this);
     }
@@ -23,17 +24,20 @@ export default class HeadNavbar extends React.Component {
 
     handleScroll() {
         if (window.pageYOffset > 500) {
-            this.setState({ bgcolor: "dark" });
+            if(!this.state.navbarNotFromHome) {
+                this.setState({ bgcolor: "dark" });
+            }
+
         }else{
-            this.setState({ bgcolor: "transparent" });
+            if(!this.state.navbarNotFromHome) {
+                this.setState({bgcolor: "transparent"});
+            }
         }
     }
 
-
-
     render() {
         return (
-            <Navbar expand="lg" variant="dark" bg="dark" fixed="top" bg={this.state.bgcolor}>
+            <Navbar expand="lg" variant="dark" fixed="top" bg={this.state.bgcolor}>
                 <Container>
                     <Navbar.Brand>Hao Chen</Navbar.Brand>
                     <Navbar.Collapse id="nav-content">
@@ -43,8 +47,7 @@ export default class HeadNavbar extends React.Component {
                             </Nav.Item>
                             <Nav.Item className="nav-item">
                                 <NavDropdown   title="Blog"  id="navBarDropdown">
-                                    <NavDropdown.Item href="/moblie" >ml</NavDropdown.Item>
-                                    <NavDropdown.Item >Single blog</NavDropdown.Item>
+                                    <NavDropdown.Item href="/moblie" >web application</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav.Item>
                             <Nav.Item className="nav-item">
@@ -57,12 +60,6 @@ export default class HeadNavbar extends React.Component {
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
-                    <div>
-                        <a href="#" className="myicon" title="Facebook"><i className="fa fa-facebook"></i></a>
-                        <a href="#" className="myicon" title="Linkedin"><i className="fa fa-linkedin"></i></a>
-                        <a href="#" className="myicon" title="Github"><i className="fa fa-github"></i></a>
-                        <a hef="#" className="myicon" title="Apple"><i className="fa fa-apple"></i></a>
-                    </div>
                 </Container>
             </Navbar>
         );

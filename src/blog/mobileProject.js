@@ -1,15 +1,21 @@
 import React from 'react';
-import { Container, Row, Col, Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
-import BlogNavbar from "./BlogNavbar";
-
+import HeadNavbar from "../js/HeadNavbar";
+import mobile_picture from './mobie.png';
+import DBPicture from './RDBMS_structure.png';
+import upload_picture from './mobile2.png';
 
 export default class MobileProject extends React.Component {
     render() {
+        const Pstyle={
+            height : '10%',
+            width : '20%'
+        };
         return (
             <div className='mobile'>
-                <BlogNavbar />
+                <HeadNavbar notFromHome={true} bgcolor={"dark"}/>
                 <section className="breadcrumb breadcrumb_bg">
                     <div className="container">
                         <div className="row">
@@ -28,51 +34,110 @@ export default class MobileProject extends React.Component {
                     <Container className="box_1170">
                         <h3 className="text-heading">Project Description</h3>
                         <p className="sample-text">
-                            This project is my first B2C project. It was widely used in location area, popular my location folks.
+                            This project is my first B2C project. It was widely used in location area, popular by location folks.
                             I developed both-backend and front-end using technology such like spring, mybatis,bootstrap and JQUery.
                             Also including design the database follow the three principles.
                         </p>
+                        <div className="text-center">
+                            <img src={mobile_picture} style={Pstyle}/>
+                        </div>
                     </Container>
                 </section>
 
+
                 <div className="whole-wrap">
                     <Container className="box_1170">
-                        <Row className="section-top-border">
+                        <div className="section-top-border">
                             <h3 className="mb-30">DataBase Design</h3>
                             <Row>
                                 <Col md="3">
-                                    <img src="img/elements/d.jpg" alt="" className="img-fluid" />
+                                    <img src={DBPicture} alt="" className="img-fluid" />
                                 </Col>
                                 <Col md="9" sm="20">
-                                    <p>Recently, the US Federal government banned online casinos from operating in
-                                        America by making
-                                        it illegal to
-                                        transfer money to them through any US bank or payment system. As a result of
-                                        this law, most
-                                        of the popular
-                                        online casino networks such as Party Gaming and PlayTech left the United States.
-                                        Overnight,
-                                        online casino
-                                        players found themselves being chased by the Federal government. But, after a
-                                        fortnight, the
-                                        online casino
-                                        industry came up with a solution and new online casinos started taking root.
-                                        These began to
-                                        operate under a
-                                        different business umbrella, and by doing that, rendered the transfer of money
-                                        to and from
-                                        them legal. A major
-                                        part of this was enlisting electronic banking systems that would accept this new
-                                        clarification and start doing
-                                        business with me. Listed in this article are the electronic banking systems that
-                                        accept
-                                        players from the United
-                                        States that wish to play in online casinos.</p>
+                                    <p>Three paradigms of database design</p>
+                                    <p>1 . First paradigm (ensuring that each column remains atomic)
+                                        The first paradigm is the most basic paradigm.
+                                        If all the field values in a database table are non-exploded atomic values,
+                                        the database table satisfies the first paradigm.</p>
+                                    <p>2 . Second paradigm (ensure
+                                        that each column in the table is related to the primary key) The second paradigm
+                                        is based on the first paradigm in a more advanced layer. The second paradigm needs
+                                        to ensure that each column in a database table is related to the primary key, not
+                                        just one part of the primary key (primarily for the Federated primary key). In other words,
+                                        in a database table, only one data can be saved in a table, and multiple data cannot be saved
+                                        in the same database table.</p>
+                                    <p>
+                                        3 . Third paradigm (ensure that each column is directly related to the primary key column, not indirectly)
+                                        The third paradigm needs to ensure that each column of data in a data table is directly related to the primary
+                                        key, not indirectly.</p>
                                 </Col>
                             </Row>
-                        </Row>
+                        </div>
+
+                        <div className="section-top-border text-right">
+                            <h3 className="mb-30">Multi-Thread Picture upload</h3>
+                            <Row>
+                                <Col md="9">
+                                    <p className="text-right">This project allow pictures user can upload maximum 5 pictures in less than 1
+                                        second, we compress picture before they upload to server side with order. user can manipulate pictures
+                                        including add,delete and replace operations without interact with server side.
+                                    </p>
+                                    <p className="text-right">In server side, we use java multithread class :CachedThreadPool to execute incoming
+                                        images without losing order</p>
+                                </Col>
+                                <div className="col-md-3">
+                                    <img src={upload_picture} alt="" className="img-fluid" />
+                                </div>
+                            </Row>
+                        </div>
+
+                        <div className="section-top-border">
+                            <h3 className="mb-30">Combined Search</h3>
+                            <Row>
+                                <Col md="9" sm="20">
+                                    <p>This function makes user can use multi conditions to search for their satisified
+                                    servies and with fast response, the mainly tecnlolgy used in back-end is mysql and
+                                    mybatis</p>
+                                </Col>
+                            </Row>
+                        </div>
+
+                        <div className="section-top-border">
+                            <h3 className="mb-30">Included Technology</h3>
+                            <Row>
+                                <Col md="4">
+                                    <div className="Front-end">
+                                        <h4 className="mb-20">Front-end</h4>
+                                        <p>JQuery</p>
+                                        <p>JavaScript</p>
+                                        <p>Bootstrap</p>
+                                        <p>canvas</p>
+                                        <p>base64</p>
+                                    </div>
+                                </Col>
+                                <Col md="4">
+                                    <div className="Back-end">
+                                        <h4 className="mb-20">Back-end</h4>
+                                        <p>Spring</p>
+                                        <p>Mybatis</p>
+                                        <p>Thread Pool</p>
+                                        <p>MYSQL</p>
+                                    </div>
+                                </Col>
+                                <Col md="4">
+                                    <div className="Architecture">
+                                        <h4 className="mb-20">Architecture</h4>
+                                        <p>3-Tired  Architecture</p>
+                                        <p>MVC</p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
                     </Container>
+
                 </div>
+
+
             </div>
 
         );
