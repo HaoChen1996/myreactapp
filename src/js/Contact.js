@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
 import Fade from 'react-reveal/Fade'
 import emailjs from 'emailjs-com';
-import EmailValidator from 'email-validator';
 
 export default class Contact extends React.Component {
 
@@ -38,7 +37,7 @@ export default class Contact extends React.Component {
 
     render() {
         return (
-        <footer className="footer_Part padding_top">
+        <footer id="contact_part" className="footer_Part padding_top">
             <Container>
                 <Row>
                     <Col lg="12" className="text-lg-center">

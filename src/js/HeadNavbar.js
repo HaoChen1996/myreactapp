@@ -3,6 +3,7 @@ import { Container, Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
 
+
 export default class HeadNavbar extends React.Component {
 
     constructor(props) {
@@ -56,7 +57,7 @@ export default class HeadNavbar extends React.Component {
                                 </NavDropdown>
                             </Nav.Item>
                             <Nav.Item className="nav-item">
-                                <Nav.Link >Contact</Nav.Link>
+                                <HashLink to="/contact_part">Contact</HashLink>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
