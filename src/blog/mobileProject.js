@@ -92,7 +92,7 @@ export default class MobileProject extends React.Component {
                         </div>
 
                         <div className="section-top-border">
-                            <h3 className="mb-30">Combined Search</h3>
+                            <h3 className="mb-30">Combined conditions and page Search</h3>
                             <Row>
                                 <Col md="9" sm="20">
                                     <p>This function makes user can use multi conditions to search for their satisified
