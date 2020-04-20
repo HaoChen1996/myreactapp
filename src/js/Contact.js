@@ -5,6 +5,7 @@ import '../css/style.css';
 import Fade from 'react-reveal/Fade'
 import emailjs from 'emailjs-com';
 
+
 export default class Contact extends React.Component {
 
     constructor(props) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
-
+import {HashLink as Link} from "react-router-hash-link";
 
 export default class HeadNavbar extends React.Component {
 
@@ -47,8 +47,9 @@ export default class HeadNavbar extends React.Component {
                                 <Nav.Link href="/home">Home</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className="nav-item">
-                                <NavDropdown   title="Blog"  id="navBarDropdown">
+                                <NavDropdown   title="Projects"  id="navBarDropdown">
                                     <NavDropdown.Item href="/moblie" >web application</NavDropdown.Item>
+                                    <NavDropdown.Item href="/ml" >machine learning</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav.Item>
                             <Nav.Item className="nav-item">
@@ -57,7 +58,7 @@ export default class HeadNavbar extends React.Component {
                                 </NavDropdown>
                             </Nav.Item>
                             <Nav.Item className="nav-item">
-                                <HashLink to="/contact_part">Contact</HashLink>
+                                <Link to="/pathLink#contact_part"><Nav.Link>Contact</Nav.Link></Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

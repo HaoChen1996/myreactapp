@@ -44,6 +44,76 @@ header  {
     color: #fff3cd;
 }
 
+.contain-arrow {
+    margin-top: 65%;
+    margin-left: -100px;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.arrow {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+.arrow:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+.arrow:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+.arrow:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+.arrow:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover .arrow:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover .arrow:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover .arrow:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover .arrow:nth-child(4) {
+    transform: rotate(-225deg);
+}
+
 .about_part {
     height: 700px;
 }
