@@ -50,6 +50,7 @@ export default class HeadNavbar extends React.Component {
                                 <NavDropdown   title="Projects"  id="navBarDropdown">
                                     <NavDropdown.Item href="/moblie" >web application</NavDropdown.Item>
                                     <NavDropdown.Item href="/ml" >machine learning</NavDropdown.Item>
+                                    <NavDropdown.Item href="/gcp" >comparsion between CGP@AWS</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav.Item>
                             <Nav.Item className="nav-item">

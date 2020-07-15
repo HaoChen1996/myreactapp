@@ -6,6 +6,7 @@ import HeadNavbar from "../js/HeadNavbar";
 import mobile_picture from './mobie.png';
 import DBPicture from './RDBMS_structure.png';
 import upload_picture from './mobile2.png';
+import pic_manage from '../img/manage.png';
 
 export default class MobileProject extends React.Component {
     render() {
@@ -99,6 +100,9 @@ export default class MobileProject extends React.Component {
                                     servies and with fast response, the mainly tecnlolgy used in back-end is mysql and
                                     mybatis</p>
                                 </Col>
+                            </Row>
+                            <Row>
+                                <img src={pic_manage} style={{height:"300px",width:"100%"}}/>
                             </Row>
                         </div>
 

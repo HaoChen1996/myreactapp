@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
 import port1 from "../img/port_1.png"
 import port2 from "../img/port_2.png"
-import port3 from "../img/port_3.png"
+import port3 from "../img/cloud.png"
 import LightSpeed from 'react-reveal/Slide';
 import Slide from 'react-reveal/Slide';
 import {Link} from "react-router-dom";
@@ -40,7 +40,7 @@ class Profile extends React.Component {
                                             <img src={port2} alt="" className="gallery__img"/>
                                         </LightSpeed>
                                     </Link>
-                                    <a href="" className="gallery__item--3">
+                                    <a href="/gcp" className="gallery__item--3">
                                         <Slide bottom >
                                             <img src={port3} alt="" className="gallery__img"/>
                                         </Slide>

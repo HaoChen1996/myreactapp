@@ -293,3 +293,19 @@ header  {
 .mb-30 {
     margin-bottom: 30px;
 }
+
+
+.ml{
+   padding-bottom: 100px;
+}
+
+
+.ml_context {
+    margin-top: 60px;
+}
+
+
+
+.btn-grp {
+    width: 80px;
+}

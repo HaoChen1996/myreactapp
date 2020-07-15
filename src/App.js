@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Switch, Route, Link,Redirect} from "react-route
 import Home from './js/Home';
 import MobileProject from "./blog/mobileProject";
 import MachineLearning from "./blog/MachineLearning";
+import Gcp from './blog/GCP';
+
 class App extends React.Component {
 
     render() {
@@ -14,6 +16,7 @@ class App extends React.Component {
                         <Route path='/home' component={Home}/>
                         <Route path='/moblie' component={MobileProject} />
                         <Route path='/ml' component={MachineLearning}  />
+                        <Route path='/gcp' component={Gcp}/>
                         <Redirect to='/home'/>
                     </Switch>
                 </Router>
