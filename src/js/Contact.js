@@ -41,22 +41,22 @@ export default class Contact extends React.Component {
         <footer id="contact_part" className="footer_Part padding_top">
             <Container>
                 <Row>
-                    <Col lg="12" className="text-lg-center">
+                    <Col xs="12" className="text-sm-center">
                         <Fade left>
                             <h1>Contact</h1>
                         </Fade>
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg="12" className="text-lg-center">
+                    <Col xs="12" className="text-sm-center">
                         <Fade left>
-                            <p>have a questoin or want to work together ?</p>
+                            <p>have a question or want to work together ?</p>
                         </Fade>
                     </Col>
                 </Row>
                 <Fade left>
-                    <Row  className="justify-content-md-center">
-                        <Col lg={4}  className="text-lg-center">
+                    <Row  className="justify-content-sm-center">
+                        <Col lg={4}  className="text-sm-center">
                             <Form noValidate validated={this.state.validated} onSubmit={this.handleSubmit}>
                                 <Form.Group>
                                     <Form.Row className="form-margin">

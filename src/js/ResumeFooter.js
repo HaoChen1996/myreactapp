@@ -10,18 +10,18 @@ class ResumeFooter extends React.Component {
             <footer className="footer_Part padding_top">
                 <Container>
                     <Row className="alingn-item-center">
-                        <Col lg="6">
+                        <Col xs="6">
                             <div className="footer_text">
                                 <span>pls send your message to me</span>
                                 <h2>chase19960609@gmail.com </h2>
                             </div>
                         </Col>
-                        <Col lg="6">
+                        <Col xs="6">
                             <div className="footer_btn">
                                 <a href="#" className="btn_1">Download CV</a>
                             </div>
                         </Col>
-                        <Col lg="6">
+                        <Col xs="6">
                             <div className="footer_menu">
                                 <a href="#">About</a>
                                 <a href="#">WORK</a>

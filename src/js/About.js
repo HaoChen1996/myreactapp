@@ -49,7 +49,7 @@ class About extends React.Component{
             <section id="about_part" className="about_part">
                 <Container>
                     <Row>
-                        <Col className="col-lg-6 ">
+                        <Col className="col-sm-6 ">
                             <Fade left>
                                 <div className="about_text">
                                     <h4>about me</h4>
@@ -66,7 +66,7 @@ class About extends React.Component{
                             </Fade>
                         </Col>
 
-                        <Col className="col-lg-6 about_text">
+                        <Col className="col-sm-6 about_text">
                             <Fade right>
                                 <div>
                                 <h4>Skill Set</h4>

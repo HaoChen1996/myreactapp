@@ -15,20 +15,20 @@ class Profile extends React.Component {
             <section className="portfolio_part ">
                 <Container>
                     <Row className="align-items-center">
-                        <Col lg="6">
+                        <Col xs="6">
                             <div className="section_tittle">
                                 <p>My portfolio</p>
                                 <h2>Take a look around some of my awesome works</h2>
                             </div>
                         </Col>
-                        <Col lg="6">
+                        <Col xs="6">
                             <div className="section_btn text-right">
                                 <a href="#" className="btn_2">More works</a>
                             </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col lg="12">
+                        <Col xs="12">
                             <div className="gallery">
                                     <Link to="/moblie" className="gallery__item--1">
                                         <LightSpeed  left>

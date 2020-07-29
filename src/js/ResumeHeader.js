@@ -13,7 +13,7 @@ class ResumeHeader extends React.Component {
                 <section className="banner_part">
                     <Container>
                         <Row>
-                            <Col className="col-lg-7">
+                            <Col className="col-sm-7">
                                 <div className="banner_text">
                                     <div className="banner_text_iner">
                                         <h5>Hi there, This is Hao</h5>
@@ -28,16 +28,6 @@ class ResumeHeader extends React.Component {
                                     </div>
                                 </div>
                             </Col>
-                            <div className="contain-arrow">
-                                <Link to="/pathLink#about_part">
-                                    <div className="round">
-                                        <span className="arrow" />
-                                        <span className="arrow"/>
-                                        <span className="arrow"/>
-                                        <span className="arrow"/>
-                                    </div>
-                                </Link>
-                            </div>
                         </Row>
 
                     </Container>
